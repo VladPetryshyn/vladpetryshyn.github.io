@@ -32,7 +32,7 @@ const Item: FC<Project> = ({ icon, link, description, title }) => {
       style={{ translateX: translateX2, borderTopRightRadius: radius, borderBottomRightRadius: radius }}
     >
       <h2 className="dark:text-dark-bg text-light-bg text-3xl mb-4 md:text-4xl xl:text-4xl 2xl:text-6xl lg:mb-6 2xl:mb-10">
-        <a href={link}>{title}</a>
+        <a href={link} aria-label={`Go to the ${title} github page`}>{title}</a>
       </h2>
       <p className="dark:text-dark-bg text-light-bg text-lg md:text-xl xl:text-2xl 2xl:text-4xl">
         {description}
@@ -42,7 +42,7 @@ const Item: FC<Project> = ({ icon, link, description, title }) => {
       className="dark:bg-dark-bg2 hidden bg-light-bg2 lg:flex rounded-r-3xl z-10 items-center justify-center h-60 2xl:h-80 w-6/12"
       style={{ translateX, borderTopLeftRadius: radius, borderBottomLeftRadius: radius }}
     >
-      <a href={link}>
+      <a href={link} aria-label={`Go to the ${title} github page`}>
         <div className="flex items-center justify-center">
           <FontAwesomeIcon icon={icon} className="dark:text-dark-txt lg:text-4xl xl:text-6xl 2xl:text-7xl text-light-txt" />
           <h2 className="dark:text-dark-txt text-light-txt lg:text-4xl xl:text-6xl 2xl:text-7xl ml-24">{title}</h2>
