@@ -11,6 +11,6 @@ export const Header = () => {
     className="dark:bg-dark-bg2 sticky top-0 flex justify-center w-full py-5 md:py-12 bg-light-bg2/80 rounded-b-3xl z-50 backdrop-blur-md"
     style={{ scale, borderTopRightRadius: radius, borderTopLeftRadius: radius, paddingTop: padding, paddingBottom: padding }}
   >
-    <LogoIcon />
+    <a aria-label="Go to the top of the page" href="#"><LogoIcon /></a>
   </motion.header>
 }
