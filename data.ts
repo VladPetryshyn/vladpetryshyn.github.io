@@ -1,7 +1,25 @@
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faBell, faLanguage, faNoteSticky } from "@fortawesome/free-solid-svg-icons"
+import { faBell, faBrain, faDumbbell, faLanguage, faNoteSticky } from "@fortawesome/free-solid-svg-icons"
 
 export const projects = [
+  {
+    title: "Based Sports",
+    description: "Federated service for sharing posts about sports, and workouts",
+    icon: faDumbbell,
+    link: "https://github.com/VladPetryshyn/based-sports"
+  },
+  {
+    title: "Based Sports Api",
+    description: "Api for Based Sports App, created using mongodb, typescript, express",
+    link: "https://github.com/VladPetryshyn/based-sports-api",
+    icon: faBrain
+  },
+  {
+    title: "Lox",
+    description: "My lox implementation, from book crafting interpreters",
+    icon: faLanguage,
+    link: "https://github.com/VladPetryshyn/lox"
+  },
   {
     title: "Organised",
     description: "Uses .org files for storing data, so users can use their notes with any other app, that supports .org syntax",
@@ -19,7 +37,7 @@ export const projects = [
     description: "Social website created using React, typescript, material ui and firebase serverless functions.",
     icon: faBell,
     link: "https://github.com/VladPetryshyn/socialApp"
-  }
+  },
 ]
 
 export type Project = typeof projects[0]
