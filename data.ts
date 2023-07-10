@@ -1,5 +1,5 @@
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faBell, faBrain, faDumbbell, faLanguage, faNoteSticky } from "@fortawesome/free-solid-svg-icons"
+import { faBell, faBrain, faDumbbell, faLanguage, faNoteSticky, faTree } from "@fortawesome/free-solid-svg-icons"
 
 export const projects = [
   {
@@ -13,6 +13,12 @@ export const projects = [
     description: "Api for Based Sports App, created using mongodb, typescript, express",
     link: "https://github.com/VladPetryshyn/based-sports-api",
     icon: faBrain
+  },
+  {
+    title: "Web Trees",
+    description: "Allows users to create web trees, shorten links",
+    icon: faTree,
+    link: "https://github.com/VladPetryshyn/web-trees"
   },
   {
     title: "Lox",
